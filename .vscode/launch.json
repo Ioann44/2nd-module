@@ -1,0 +1,19 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"preLaunchTask": "Compile ts",
+			"name": "Launch Program",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/out/main.js",
+			"outFiles": [
+				"${workspaceFolder}/**/*.js"
+			],
+			"console": "integratedTerminal"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile ts",
+			"command": "npx",
+			"type": "shell",
+			"args": [
+				"tsc",
+				"${file}",
+				"--checkJs",
+				"--outFile",
+				"./out/main.js"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"presentation": {
+				"reveal": "always"
+			},
+			"group": "build"
+		}
+	]
+}
