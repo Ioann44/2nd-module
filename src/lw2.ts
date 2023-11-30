@@ -10,13 +10,16 @@ console.log(minElement([1, 2, 3, 0, 5, 6, 7]));
 
 // Реализовать метод, возвращающий количество нулевых значений в матрице целых чисел
 function countZeros(matrix: number[][]): number {
-	return matrix.map(row => row.filter(cell => cell == 0)).length;
+	return matrix.map(row => row.filter(
+		cell => cell == 0)).reduce(
+			(sum: number, cur: Array<any>) => sum += cur.length, 0
+		);
 }
 console.log(countZeros(
 	[
 		[1, 2, 0, 4],
 		[0, 0, 1, 4],
-		[-1, 0, 2, 1],
+		[-1, 0, 0, 1],
 		[1, 1, 1, 1]
 	]
 ));
