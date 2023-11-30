@@ -7,10 +7,8 @@
 			"type": "shell",
 			"args": [
 				"tsc",
-				"${file}",
-				"--checkJs",
-				"--outFile",
-				"./out/main.js"
+				"-p",
+				"./tsconfig.json",
 			],
 			"problemMatcher": [
 				"$tsc"

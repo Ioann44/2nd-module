@@ -5,7 +5,8 @@
 			"ES6",
 			"DOM"
 		],
-		"module": "commonjs"
+		"module": "commonjs",
+		"outDir": "dist/src",
 	},
 	"exclude": [
 		"node_modules"

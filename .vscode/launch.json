@@ -9,9 +9,9 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/out/main.js",
+			"program": "${workspaceFolder}/dist/${relativeFileDirname}/${fileBasenameNoExtension}.js",
 			"outFiles": [
-				"${workspaceFolder}/**/*.js"
+				"${workspaceFolder}/dist/**/*.js"
 			],
 			"console": "integratedTerminal"
 		}
