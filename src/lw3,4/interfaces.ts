@@ -1,4 +1,5 @@
-import { CarBody, CarClass, Doc } from "./classes";
+import { Doc, CarBody, CarClass } from "./enums";
+
 
 export interface OwnerI {
 	lastName: string;
