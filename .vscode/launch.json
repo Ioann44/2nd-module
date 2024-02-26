@@ -9,7 +9,7 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/dist/${relativeFileDirname}/${fileBasenameNoExtension}.js",
+			"program": "${file}",
 			"outFiles": [
 				"${workspaceFolder}/dist/**/*.js"
 			],
