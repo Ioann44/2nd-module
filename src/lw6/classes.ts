@@ -3,7 +3,7 @@ import { VehicleI, CarI } from "./interfaces";
 import { sealed, uppered } from "./decorators";
 
 export namespace Transport {
-	// @sealed
+	@sealed
 	export class Car implements CarI {
 		carBody: CarBody;
 		carClass: CarClass;
